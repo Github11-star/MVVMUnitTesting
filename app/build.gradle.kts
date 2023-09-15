@@ -38,8 +38,44 @@ android {
     }
     kotlinOptions {
         jvmTarget = "17"
+        //freeCompilerArgs = ['-Xjvm-default=compatibility']
     }
+
+    /*sourceSets {
+        create("androidTest") {
+            java.srcDir("src/sharedTest/java")
+            //java.srcDir("src/sharedTest/java")
+            //resources.srcDir("src/analytics/resources")
+        }
+        create("test") {
+            java.srcDir("src/sharedTest/java")
+            //java.srcDir("src/sharedTest/java")
+            //resources.srcDir("src/analytics/resources")
+        }
+    }*/
+
 }
+        /*sourceSets {
+            androidTest {
+                java.srcDirs += "src/sharedTest/java"
+            }
+            test {
+                java.srcDirs += "src/sharedTest/java"
+            }
+        }*/
+
+    /*sourceSets {
+        create("androidTest") {
+            java.srcDir("src/sharedTest/java")
+            //java.srcDir("src/sharedTest/java")
+            //resources.srcDir("src/analytics/resources")
+        }
+        create("test") {
+            java.srcDir("src/sharedTest/java")
+            //java.srcDir("src/sharedTest/java")
+            //resources.srcDir("src/analytics/resources")
+        }
+    }*/
 
 dependencies {
 
